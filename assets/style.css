@@ -1,0 +1,129 @@
+/* RESETS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* HEADER STYLES */
+
+.header{
+    margin: auto;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+nav h2 {
+    padding-left: 5vw;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block; 
+    padding: 10px 30px;
+}
+
+nav ul li a{
+    color:black;
+    font-weight: bold;
+   }
+
+nav ul li a:hover{
+    color:blueviolet;
+    transition: .3s;
+}
+.underline-effect{
+    display: inline-block;
+    padding: 0.25rem;
+    position: relative;
+}
+.underline-effect::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: blueviolet;
+    transition: width 0.25s ease-in-out;
+}
+.underline-effect:hover::before{
+   width: 100%;
+}
+
+/* Styling for if I want to add a button later */
+/* button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20 px;
+    background: black;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+    font-size: 16px;
+} */
+
+/* MAIN STYLING */
+
+.first-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 200px;
+}
+.first-section h2{
+    font-family: 'Permanent Marker';
+    position: relative;
+    left: 10px;
+    
+}
+.first-section p{
+    position: relative;
+    right: 120px;
+    padding-top: 40px;
+    word-wrap: break-word;
+    width: 300px;
+}
+
+.second-section{
+    display:block;
+    padding-top: 80px;
+    margin-left: 10%;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-content: center;
+    gap: 10px;
+}
+
+.gallery img{
+    width: 600px;
+}
+
+#first{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    
+}
+#first:hover, #second-project:hover, #third-project:hover, #fourth-project:hover {
+    content: '';
+    opacity: 40%;
+    transition: 0.3s ease-out;
+}
