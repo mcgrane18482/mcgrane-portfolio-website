@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Noto Sans -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Permanent Marker Font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/style.css">
     <title>McGrane Portfolio</title>
 </head>
@@ -20,7 +23,7 @@
             <h2 class="logo">Erin McGrane</h2>
             <ul>
                 <!--CODE SOURCE TO https://youtu.be/Kz96odltLQI -->
-                <li><a class="underline-effect" href="#home">Home</a></li>
+                <li><a id="active" class="underline-effect" href="#home">Home</a></li>
                 <li><a class="underline-effect"href="#about">About</a></li>
                 <li><a class="underline-effect"href="#work">Work</a></li>
                 <li><a class="underline-effect"href="#contact">Contact</a></li>
@@ -32,15 +35,16 @@
 
     <main>
         <section id="about"class="first-section">
-            <h2>Hi I'm Erin</h2>
+            <h1>Erin is a designer based in New Jersey.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat earum eaque aspernatur, non corrupti veniam fugit quo provident, et praesentium eius labore ex cum inventore magni nam soluta tempora! Laudantium!</p>
             <img id="logo"src="https://placehold.co/300x200" alt="Logo" />
         </section>
+      
 
         <section id="work"class="second-section">
             <h2>My Work</h2>
             <img id="first" src="https://placehold.co/600x400" alt="First Project"/>
-            <ul class="gallery">
+            <div class="gallery">
                 <a href="second-project.html">
                     <img id="second-project" src="https://placehold.co/600x400" alt="Second Project"/>
                  </a>
@@ -50,18 +54,25 @@
                  <a href="fourth-project.html">
                     <img id="fourth-project" src="https://placehold.co/600x400" alt="Fourth Project"/>
                 </a>
-            </ul>
+            </div>
         </section>
 
         <section id="contact" class="third-section">
             <h2>Contact</h2>
                 <ul>
-                    <p><span>Phone:</span> ### ### ####</p>
                     <p><span>Email: </span> c.erinmcgrane1@gmail.com </p>
-                    <a href="URL">LinkedIn</a>
+                    <p><span>Find me on: </span>
+                    <a href="https://www.linkedin.com/in/c-erinmcgrane/"> LinkedIn</a>
+                    <a href="https://github.com/mcgrane18482">, GitHub</a>
+                    </p>
+                    <i class="fa fa-car" style="font-size: 32px;"></i>
                 </ul>
             </div>
         </section>
+
+        <footer>
+            <h3>&copy 2023 E McGrane</h3>
+        </footer>
     </main>
 </body>
 
