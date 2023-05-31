@@ -22,6 +22,7 @@ img{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 }
 nav{
+    height:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,4 +130,25 @@ nav ul li a:hover{
     content: '';
     opacity: 40%;
     transition: 0.3s ease-out;
+}
+.third-section{
+    padding-top: 80px;
+    margin-left: 10%;
+}
+.third-section ul{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.third-section ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+    gap: 100px;
+    padding-bottom: 80px;
+}
+.third-section ul p span{
+    font-weight: bold;
 }
