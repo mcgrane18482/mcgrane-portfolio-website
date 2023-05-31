@@ -17,6 +17,7 @@ img{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 1;
     background-color: #f1f1f1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 }
@@ -112,7 +113,9 @@ nav ul li a:hover{
 }
 
 .gallery img{
-    width: 600px;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 #first{
