@@ -1,18 +1,19 @@
 /* RESETS */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
-img{
+
+img {
     max-width: 100%;
 }
 
 /* HEADER STYLES */
 
-.header{
+.header {
     margin: auto;
     height: 80px;
     width: 100%;
@@ -21,38 +22,42 @@ img{
     background-color: #50617a;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 }
-nav{
-    height:100%;
+
+nav {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
 }
+
 nav h2 {
     padding-left: 5vw;
     font-weight: 400;
     color: white;
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
-    display: inline-block; 
+    display: inline-block;
     padding: 10px 30px;
 }
 
-nav ul li a{
-    color:white;
+nav ul li a {
+    color: white;
     font-weight: 300;
-   }
+}
 
-#active{
+#active {
     font-weight: bold;
 }
 
-.underline-effect{
+.underline-effect {
     display: inline-block;
     position: relative;
 }
-.underline-effect::before{
+
+.underline-effect::before {
     content: "";
     position: absolute;
     left: 0;
@@ -62,8 +67,9 @@ nav ul li a{
     background-color: white;
     transition: width 0.25s ease-in-out;
 }
-.underline-effect:hover::before{
-   width: 100%;
+
+.underline-effect:hover::before {
+    width: 100%;
 }
 
 /* Styling for if I want to add a button later */
@@ -82,27 +88,36 @@ nav ul li a{
 
 .first-section {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     padding: 200px;
 }
-.first-section h1{
+
+.first-section h1 {
     font-family: 'Playfair Display';
     font-size: 36px;
     width: 400px;
     padding-right: 3%;
-    
+
 }
-.first-section p{
+
+.first-section p {
     position: absolute;
     top: 300px;
     word-wrap: break-word;
     width: 400px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
 
-.second-section{
-    display:block;
+.second-section {
+    display: block;
     padding-top: 80px;
     margin-left: 10%;
 }
@@ -115,31 +130,38 @@ nav ul li a{
     max-width: 1200px;
     gap: 10px;
 }
+
 .gallery a {
     text-align: center;
 }
 
-#first{
+#first {
     display: block;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 10px;
-    
+
 }
-#first:hover, #second-project:hover, #third-project:hover, #fourth-project:hover {
+
+#first:hover,
+#second-project:hover,
+#third-project:hover,
+#fourth-project:hover {
     content: '';
     opacity: 40%;
     transition: 0.3s ease-out;
 }
-.third-section{
+
+.third-section {
     padding-top: 80px;
     margin-left: 10%;
 }
-.third-section ul{
+
+.third-section ul {
     padding-top: 20px;
     display: flex;
     justify-content: flex-start;
-    
+
 }
 
 .third-section ul {
@@ -149,7 +171,8 @@ nav ul li a{
     gap: 100px;
     padding-bottom: 80px;
 }
-.third-section ul p span{
+
+.third-section ul p span {
     font-weight: bold;
 }
 
@@ -161,3 +184,15 @@ footer {
     height: 100px;
     background-color: #50617a;
 }
+
+/* Responsive Styles*/
+
+@media screen and (max-width:1150px) {
+    .first-section {
+        flex-direction: column;
+    }
+    #logo {
+        margin-top: 100px;
+        min-width: 300px;
+    }
+}   
