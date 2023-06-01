@@ -95,7 +95,7 @@ nav ul li a {
     padding: 200px;
 }
 
-.first-section h1 {
+.intro h1 {
     font-family: 'Playfair Display';
     font-size: 36px;
     width: 400px;
@@ -103,11 +103,11 @@ nav ul li a {
 
 }
 
-.first-section p {
-    position: absolute;
-    top: 300px;
+.intro p {
+    position: relative;
+    top: 8px;
     word-wrap: break-word;
-    width: 400px;
+    width: 350px;
 }
 
 .intro {
