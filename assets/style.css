@@ -190,9 +190,20 @@ footer {
 @media screen and (max-width:1150px) {
     .first-section {
         flex-direction: column;
+        align-items: center;
     }
     #logo {
+        align-items: center;
         margin-top: 100px;
         min-width: 300px;
     }
+    .gallery a img{
+        min-width: 300px;
+    }
 }   
+
+@media screen and (max-width: 980px){
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
